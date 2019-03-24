@@ -1,0 +1,62 @@
+package spk_xe;
+
+{$R *.res}
+{$R *.otares}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  vclactnband;
+
+contains
+  spkt_Appearance in 'SpkToolbar\spkt_Appearance.pas',
+  spkt_BaseItem in 'SpkToolbar\spkt_BaseItem.pas',
+  spkt_Buttons in 'SpkToolbar\spkt_Buttons.pas',
+  spkt_Const in 'SpkToolbar\spkt_Const.pas',
+  spkt_Dispatch in 'SpkToolbar\spkt_Dispatch.pas',
+  spkt_Exceptions in 'SpkToolbar\spkt_Exceptions.pas',
+  spkt_Items in 'SpkToolbar\spkt_Items.pas',
+  spkt_Pane in 'SpkToolbar\spkt_Pane.pas',
+  spkt_Tab in 'SpkToolbar\spkt_Tab.pas',
+  spkt_Tools in 'SpkToolbar\spkt_Tools.pas',
+  spkt_Types in 'SpkToolbar\spkt_Types.pas',
+  SpkToolbar in 'SpkToolbar\SpkToolbar.pas',
+  spktoolbarpackage in 'spktoolbarpackage.pas',
+  registerspktoolbar in 'registerspktoolbar.pas',
+  SpkGraphTools in 'SpkGraphTools\SpkGraphTools.pas',
+  SpkMath in 'SpkMath\SpkMath.pas',
+  SpkXMLIni in 'SpkXML\SpkXMLIni.pas',
+  SpkXMLParser in 'SpkXML\SpkXMLParser.pas',
+  SpkXMLTools in 'SpkXML\SpkXMLTools.pas',
+  SpkGUITools in 'SpkGUITools\SpkGUITools.pas',
+  SpkToolbarEditor in 'designtime\SpkToolbarEditor.pas',
+  spkte_EditWindow in 'designtime\spkte_EditWindow.pas',
+  spkte_AppearanceEditor in 'designtime\spkte_AppearanceEditor.pas';
+
+end.
